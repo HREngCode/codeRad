@@ -13,7 +13,8 @@
 }
 
 .navbar.sticky .navbar-toggler span, 
-.navbar.sticky .navbar-brand {
+.navbar.sticky .navbar-brand, 
+.navbar.sticky .navbar-nav a {
   color: var(--font-color-dark);
 } 
 
@@ -29,14 +30,21 @@
 
 .navbar-toggler span {
   color: var(--white);
-  font-size: var(--size-20);
-  cursor: pointer;
-  pointer-events: none;
 }
 
 [aria-controls="navbarDropdown"] {
   display: none;
 }
+
+.crop-container {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  }
+.crop-container img {
+  margin-top: -100px;
+  margin-left: -200px;
+  }
 
 .navbar-nav {
   display: flex;
